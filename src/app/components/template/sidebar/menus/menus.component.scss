@@ -1,0 +1,31 @@
+@import "../../../../../scss/variables";
+
+ul {
+    list-style: none;
+    padding: 0;
+    background: $branco;
+    li {
+        display: block;
+        h4 {
+            margin-left: 15px;
+        }
+        ul {
+            li {
+                border-bottom: 1px solid #ccc;
+                a {
+                    padding: 15px;
+                    text-decoration: none;
+                    color: $cinza;
+                    display: block;
+                    &:hover {
+                        background: $cinza;
+                        color: $branco !important;
+                    }
+                }
+                &:first-child {
+                    border-top: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}

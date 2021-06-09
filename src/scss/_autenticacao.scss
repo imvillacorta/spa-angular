@@ -9,6 +9,9 @@
         border: #ccc 1px solid;
         border-radius: 20px;
         padding: 10px;
+        @media (max-width: 768px) {
+            width: 300px;
+        }
         .inputs {
             display: flex;
             align-items: center;

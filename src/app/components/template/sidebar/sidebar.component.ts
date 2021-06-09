@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  element: any;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  menu() {
+    this.element = document.querySelector('#nav');
+    this.element.classList.toggle('nav');
   }
 
 }

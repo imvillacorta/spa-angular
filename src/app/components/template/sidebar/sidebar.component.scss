@@ -1,32 +1,35 @@
 @import "../../../../scss/variables";
 
 .sidebar {
-    ul {
-        list-style: none;
-        padding: 0;
-        li {
+    .menu-responsive {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        margin-left: 15px;
+        @media (min-width: 64em) {
+            display: none;
+        }
+    }
+
+    .nav-responsive {
+        position: absolute;
+        left: -200px;
+
+        @media (min-width: 64em) {
+            display: none;
+        }
+    }
+
+    .nav {
+        background: $branco;
+        position: absolute;
+        left: 0px;
+    }
+
+    .nav-desktop {
+        display: none;
+        @media (min-width: 64em) {
             display: block;
-            h4 {
-                margin-left: 15px;
-            }
-            ul {
-                li {
-                    border-bottom: 1px solid #ccc;
-                    a {
-                        padding: 15px;
-                        text-decoration: none;
-                        color: $cinza;
-                        display: block;
-                        &:hover {
-                            background: $cinza;
-                            color: $branco !important;
-                        }
-                    }
-                    &:first-child {
-                        border-top: 1px solid #ccc;
-                    }
-                }
-            }
         }
     }
 }
