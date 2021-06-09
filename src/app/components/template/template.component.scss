@@ -3,8 +3,6 @@
 .wrapper {
     display: grid;
     grid-template-rows: 5rem 5rem 1fr 2rem;
-    grid-column-gap: 10px;
-    // grid-gap: 10px;
     grid-template-areas:
         "headers"
         "sidebar"
