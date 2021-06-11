@@ -6,9 +6,16 @@ import { RecuperarSenhaComponent } from './pages/autenticacao/recuperar-senha/re
 import { AutoCadastroComponent } from './pages/autenticacao/auto-cadastro/auto-cadastro.component';
 import { TemplateComponent } from './components/template/template.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NaoEncontradoComponent } from './pages/erros/nao-encontrado/nao-encontrado.component';
+
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
   {
     path: 'login',
     component: LoginComponent
@@ -21,11 +28,6 @@ const routes: Routes = [
   {
     path: 'auto-cadastro',
     component: AutoCadastroComponent
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
   },
   {
     path: '',
@@ -53,6 +55,10 @@ const routes: Routes = [
           )
       }
     ]
+  },
+  {
+    path: '**',
+    component: NaoEncontradoComponent
   }
 ];
 

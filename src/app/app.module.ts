@@ -10,6 +10,7 @@ import { RecuperarSenhaComponent } from './pages/autenticacao/recuperar-senha/re
 import { AutoCadastroComponent } from './pages/autenticacao/auto-cadastro/auto-cadastro.component';
 import { TemplateComponent } from "./components/template/template.component";
 import { HomeComponent } from './pages/home/home.component';
+import { NaoEncontradoComponent } from './pages/erros/nao-encontrado/nao-encontrado.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { HomeComponent } from './pages/home/home.component';
     RecuperarSenhaComponent,
     AutoCadastroComponent,
     TemplateComponent,
-    HomeComponent
+    HomeComponent,
+    NaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
