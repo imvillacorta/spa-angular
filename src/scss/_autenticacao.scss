@@ -1,12 +1,14 @@
+@import "../scss/variables";
+
 .wrapper {
     display: grid;
     place-content: center;
     height: 100vh;
     .box {
-        background: #fff;
+        background: $branco;
         width: 500px;
         height: auto;
-        border: #ccc 1px solid;
+        border: $cinza-claro 1px solid;
         border-radius: 20px;
         padding: 10px;
         @media (max-width: 768px) {
@@ -16,7 +18,7 @@
             display: flex;
             align-items: center;
             height: 40px;
-            border: #ccc 1px solid;
+            border: $cinza-claro 1px solid;
             border-radius: 20px;
             margin-bottom: 15px;
             padding: 0 10px;
