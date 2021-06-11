@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from 'src/app/guards/auth.guard';
 import { MonitorComponent } from './monitores/monitor/monitor.component';
 
 import { MonitoresComponent } from './monitores/monitores.component';
@@ -18,14 +19,17 @@ const routes: Routes = [
       },
       {
         path: 'monitores',
+        canActivate: [AuthGuard],
         children: [
           {
             path: '',
             component: MonitoresComponent,
+            canActivate: [AuthGuard]
           },
           {
             path: 'adicionar',
-            component: MonitorComponent
+            component: MonitorComponent,
+            canActivate: [AuthGuard]
           }
 
         ]
@@ -36,10 +40,12 @@ const routes: Routes = [
           {
             path: '',
             component: TecladosComponent,
+            canActivate: [AuthGuard]
           },
           {
             path: 'adicionar',
-            component: TecladoComponent
+            component: TecladoComponent,
+            canActivate: [AuthGuard]
           }
 
         ]

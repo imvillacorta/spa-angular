@@ -6,6 +6,7 @@ import { RecuperarSenhaComponent } from './pages/autenticacao/recuperar-senha/re
 import { AutoCadastroComponent } from './pages/autenticacao/auto-cadastro/auto-cadastro.component';
 import { TemplateComponent } from './components/template/template.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -32,10 +33,12 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
+        canActivate: [AuthGuard]
       },
       {
         path: 'acessos',
+        canActivate: [AuthGuard],
         loadChildren: () =>
           import('./pages/acessos/acessos.module').then(
             m => m.AcessosModule
@@ -43,6 +46,7 @@ const routes: Routes = [
       },
       {
         path: 'produtos',
+        canActivate: [AuthGuard],
         loadChildren: () =>
           import('./pages/produtos/produtos.module').then(
             m => m.ProdutosModule
