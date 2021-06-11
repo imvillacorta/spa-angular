@@ -1,27 +1,35 @@
-# SpaAngular
+# SPA Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+Este projeto foi desenvolvido com [Angular CLI](https://github.com/angular/angular-cli) versão 12.0.1.
 
-## Development server
+## Resumo do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Este projeto tem como foco mostrar de uma forma simplificada como é desenvolvido uma estrutura SPA no Angular.
 
-## Code scaffolding
+Foi desenvolvido um SPA pensando em um template tradicional de sistema com HEADER, SIDEBAR, MAIN e FOOTER, com duas tags de ROUTER OUTLET, com isso aproveitei para trabalhar com rotas pai e filhas, também foi implementado os guardas de rotas em base de um login fake.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Não foquei na questão visual, o projeto tem o minimo de estilos CSS, deixando assim para que você aproveite a base SPA e construir suas próprias páginas customizadas. As páginas presentes neste projeto servem apenas como exemplo e validar a prática como um todo. 
+## Pré requisitos
 
-## Build
+- Instalar [NodeJS](https://nodejs.org/en/)
+- Instalar [Angular](https://angular.io/guide/setup-local)
+## Executando o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### - Instalando as dependências
 
-## Running unit tests
+Após clonar o projeto é preciso instalar as dependências, o projeto final esta na branch 'main', use o seguinte comando para instalar as dependências:
+```
+npm i
+```
+### - Executando o front end
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para rodar a aplicação use o seguinte comando:
+```
+ng serve
+```
 
-## Running end-to-end tests
+Feito isso navegue para http://localhost:4200
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Pronto, feito isso o sistema deve estar rodando perfeitamente.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Qualquer sugestão de melhoria é bem vinda.
