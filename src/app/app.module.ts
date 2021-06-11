@@ -9,17 +9,15 @@ import { LoginComponent } from './pages/autenticacao/login/login.component';
 import { RecuperarSenhaComponent } from './pages/autenticacao/recuperar-senha/recuperar-senha.component';
 import { AutoCadastroComponent } from './pages/autenticacao/auto-cadastro/auto-cadastro.component';
 import { TemplateComponent } from "./components/template/template.component";
-
-
-
-
+import { HomeComponent } from './pages/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RecuperarSenhaComponent,
     AutoCadastroComponent,
-    TemplateComponent
+    TemplateComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

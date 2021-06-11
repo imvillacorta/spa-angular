@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menus',
@@ -7,9 +8,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenusComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  perfisAcesso() {
+    this.router.navigate([
+      '/acessos/perfis-acesso'
+    ])
+  }
+
+  usuarios() {
+    this.router.navigate([
+      '/acessos/usuarios'
+    ])
+  }
+
+  monitores() {
+    this.router.navigate([
+      '/produtos/monitores'
+    ])
+  }
+
+  teclados() {
+    this.router.navigate([
+      '/produtos/teclados'
+    ])
   }
 
 }
