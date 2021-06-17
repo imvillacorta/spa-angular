@@ -6,7 +6,9 @@ Este projeto foi desenvolvido com [Angular CLI](https://github.com/angular/angul
 
 Este projeto tem como foco mostrar de uma forma simplificada como é desenvolvido uma estrutura SPA no Angular.
 
-Foi desenvolvido um SPA pensando em um template tradicional de sistema com HEADER, SIDEBAR, MAIN e FOOTER, com duas tags de ROUTER OUTLET, com isso aproveitei para trabalhar com rotas pai e filhas, também foi implementado os guardas de rotas em base de um login fake.
+Foi desenvolvido um SPA pensando em um template tradicional de sistema com HEADER, SIDEBAR, MAIN e FOOTER, com duas tags de ROUTER OUTLET, com isso aproveitei para trabalhar com rotas pai e filhas.
+
+O projeto também contempla guarda de rotas implementado através de um login fake e os componentes são chamados usando a técnica de lazy loading.
 
 Não foquei na questão visual, o projeto tem o minimo de estilos CSS, deixando assim para que você aproveite a base SPA e construir suas próprias páginas customizadas. As páginas presentes neste projeto servem apenas como exemplo e validar a prática como um todo. 
 ## Pré requisitos
